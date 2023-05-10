@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarjeta</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Foldit:wght@200&family=Pacifico&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        body {}
+
+        img {
+            width: 300px;
+        }
+
+        .tarjeta {
+
+            border-color: rgb(69, 69, 243);
+            border: 5px;
+            width: 600px;
+            margin-top: 30px;
+            margin-left: 30px;
+
+        }
+
+
+        .tarjeta {
+            background: rgb(12, 87, 171);
+            background: linear-gradient(0deg, rgba(12, 87, 171, 1) 0%, rgba(133, 236, 219, 1) 44%, rgba(169, 213, 247, 0.8939950980392157) 100%);
+        }
+
+        #nombre {
+            color: rgb(0, 115, 247);
+            font-family: 'Patrick Hand', cursive;
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        #descripcion {
+            color: rgb(2, 2, 78);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="tarjeta" id="nombre" name="nombre">
+        Bob Esponja
+        <br>
+        <img src="https://peru21.pe/resizer/yNu6EZADMOnCY-YGevBD84tCoSM=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6RDFP4F6QNCN7FYPLOTLM2IQ5M.jpg"
+            alt="">
+    </p>
+<p class="tarjeta" id="descripcion" name="descripcion">Esponja amarilla y cuadrada que ríe demasiado,ama su
+        trabajo en el Crustáceo Cascarudo, experto en cangreburgers, cazar medusas y hacer pompas de
+        jabón con su mejor amigo Patricio, su mascota es un caracol llamado Gary y viven juntos en una piña debajo del
+        mar.</p>
+</body>
+
+</html>
