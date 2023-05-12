@@ -1,66 +1,92 @@
-.item-1 {
-    grid-area: header;
+.navbar {
+    display: flex;
+
+    -webkit-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    -moz-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    justify-content: space-between;
+    background-color: rgb(237, 217, 255);
+    padding: 20px;
+    font-size: xx-large;
 }
 
-.item-2 {
-    grid-area: menu;
+.contenido {
     display: grid;
-    gap: 10px;
-    padding: 10px;
-    text-align: center;
-    background-color: antiquewhite
+    grid-template-areas:
+        "sidebar sidebar think think think "
+        "sidebar sidebar publicacion publicacion publicacion";
+    margin-top: 50px;
+    padding: 20px;
+    -webkit-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    -moz-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    justify-content: space-between;
+    background-color: rgb(237, 217, 255);
 }
 
-.item-3 {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 5px;
+.contenido div {
+    -webkit-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    -moz-box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+    box-shadow: 38px 36px 18px -33px rgba(60, 0, 255, 1);
+}
+.publicacion {
+    display: flex;
+    justify-content: space-between;
+    }
+.publicacion div {
+    border: 1px dotted;
     padding: 10px;
-    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
-/*grid dentro de la grid*/
-
-#main-1 {
-    grid-column: 1/4;
+.navbar img {
+    width: 100px;
 }
 
-#main-10 {
-    grid-row: 3/6;
-    grid-column: 4/5;
-}
+.menu-icon {
+    display: none;
+    }
 
-.item-4 {
+.sidebar {
     grid-area: sidebar;
 }
 
-.item-5 {
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 5px;
-    padding: 5px;
-    text-align: center;
-}
-.item-5 div img {
-    width: 50px;
-    
-}
-/*orden y espacio de las casillas*/
-
-.contenedor-principal {
-    display: grid;
-    grid-template-areas: 'header header header header header header'
-        'menu menu main main main sidebar'
-        'footer footer footer footer footer sidebar';
-    border: 2px solid;
-    background-color: rgb(252, 214, 189);
-    gap: 10px;
-
+.think {
+    grid-area: think;
 }
 
-.contenedor-principal div {
-    border: solid;
+.publicacion {
+    grid-area: publicacion;
+}
+
+.sidebar,
+.think,
+.publicacion {
+
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .menu-icon {
+        display: block;
+
+    }
+
+    .avatar,
+    .menu {
+        display: none;
+    }
+
+    .contenido {
+        background-color: rgb(237, 217, 255);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .invertido {
+        flex-direction: column-reverse;
+    }
 }
